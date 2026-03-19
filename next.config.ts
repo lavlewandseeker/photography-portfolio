@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
+const repoName = "photography-portfolio";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  output: "export",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
+  images: {
+    unoptimized: true
+  }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
