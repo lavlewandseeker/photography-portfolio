@@ -10,9 +10,8 @@ export default function Home() {
 
     <FloatingThemes />
 
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-4 text-white text-base font-bold z-20 backdrop-blur-md bg-black/30 px-4 py-2 rounded-full">
+    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-4 text-white text-base font-bold z-20 backdrop-blur-md bg-black/30 px-4 py-2 rounded-full">
 
-  <span>Photography & Development by Lav Lewand</span>
 
   <a
   href="https://instagram.com/lavlewand"

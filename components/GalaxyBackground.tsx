@@ -19,7 +19,7 @@ export default function GalaxyBackground() {
       mouse.y = e.clientY;
     });
 
-    const particles = Array.from({ length: 333 }).map(() => ({
+    const particles = Array.from({ length: 60 }).map(() => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       vx: (Math.random() - 0.5) * 0.2,
@@ -34,7 +34,7 @@ export default function GalaxyBackground() {
           const dy = particles[a].y - particles[b].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 111) {
+          if (dist < 70) {
             ctx.strokeStyle = `rgba(255,255,255,${1 - dist / 120})`;
             ctx.lineWidth = 1;
 
